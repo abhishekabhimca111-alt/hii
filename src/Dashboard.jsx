@@ -1,3 +1,5 @@
+import Carousel from './Carousel.jsx';
+
 const stats = [
   { label: 'Users', value: '12,480', change: '+4.2%' },
   { label: 'Revenue', value: '$48,920', change: '+8.1%' },
@@ -46,7 +48,18 @@ export default function Dashboard() {
       </header>
 
       <main className="content">
-        <h1>Dashboard</h1>
+        <div className="page-header">
+          <div>
+            <h1>Dashboard</h1>
+            <p className="subtitle">Overview of your store performance</p>
+          </div>
+          <div className="header-actions">
+            <button className="btn btn-outline">Export</button>
+            <button className="btn btn-primary">+ New order</button>
+          </div>
+        </div>
+
+        <Carousel />
 
         <section className="stats">
           {stats.map((s) => (
