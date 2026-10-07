@@ -36,6 +36,15 @@ export default function Dashboard() {
         </nav>
       </aside>
 
+      <div className="main">
+      <header className="navbar">
+        <input className="search" type="search" placeholder="Search..." />
+        <div className="nav-right">
+          <button className="icon-btn" title="Notifications">🔔</button>
+          <div className="avatar">A</div>
+        </div>
+      </header>
+
       <main className="content">
         <h1>Dashboard</h1>
 
@@ -80,6 +89,7 @@ export default function Dashboard() {
           </table>
         </section>
       </main>
+      </div>
     </div>
   );
 }
