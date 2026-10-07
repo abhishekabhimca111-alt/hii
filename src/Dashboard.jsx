@@ -1,3 +1,5 @@
+import Carousel from './Carousel.jsx';
+
 const stats = [
   { label: 'Users', value: '12,480', change: '+4.2%' },
   { label: 'Revenue', value: '$48,920', change: '+8.1%' },
@@ -47,6 +49,8 @@ export default function Dashboard() {
 
       <main className="content">
         <h1>Dashboard</h1>
+
+        <Carousel />
 
         <section className="stats">
           {stats.map((s) => (
