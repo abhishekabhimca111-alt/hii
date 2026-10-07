@@ -12,7 +12,8 @@ body { font-family: system-ui, sans-serif; background: #f4f6fa; color: #1f2937; 
 .navbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 32px; background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 10; }
 .search { flex: 1; max-width: 360px; padding: 8px 12px; border: 1px solid #d1d5db; border-radius: 6px; font: inherit; }
 .nav-right { display: flex; align-items: center; gap: 12px; }
-.icon-btn { background: none; border: none; font-size: 18px; cursor: pointer; }
+.icon-btn { background: #2563eb; border: none; font-size: 16px; cursor: pointer; width: 34px; height: 34px; border-radius: 6px; }
+.icon-btn:hover { background: #1d4ed8; }
 .avatar { width: 34px; height: 34px; border-radius: 50%; background: #6366f1; color: #fff; display: grid; place-items: center; font-weight: 600; }
 
 .content { flex: 1; padding: 32px; display: flex; flex-direction: column; gap: 24px; }
@@ -31,8 +32,8 @@ body { font-family: system-ui, sans-serif; background: #f4f6fa; color: #1f2937; 
 .carousel { position: relative; overflow: hidden; border-radius: 10px; }
 .track { display: flex; transition: transform .5s ease; }
 .slide { flex: 0 0 100%; padding: 40px 56px; color: #fff; display: flex; flex-direction: column; gap: 8px; }
-.arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,.25); color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 22px; cursor: pointer; }
-.arrow:hover { background: rgba(255,255,255,.4); }
+.arrow { position: absolute; top: 50%; transform: translateY(-50%); background: #2563eb; color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 22px; cursor: pointer; }
+.arrow:hover { background: #1d4ed8; }
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
 .dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; }
